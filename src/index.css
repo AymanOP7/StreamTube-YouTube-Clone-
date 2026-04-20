@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yt-black: #0f0f0f;
+  --color-yt-bg: #121212;
+  --color-yt-hover: #272727;
+  --color-yt-border: #333333;
+  --color-yt-gray-text: #aaaaaa;
+}
+
+@layer base {
+  body {
+    @apply bg-yt-black text-white antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer components {
+  .sidebar-item-active {
+    @apply bg-yt-hover font-bold;
+  }
+  
+  .category-pill {
+    @apply bg-yt-hover rounded-lg px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors cursor-pointer hover:bg-[#3f3f3f];
+  }
+  
+  .category-pill-active {
+    @apply bg-white text-black;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #717171;
+}
+

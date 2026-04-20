@@ -1,0 +1,6 @@
+{
+  "name": "StreamTube",
+  "description": "A feature-rich YouTube clone with real-time comments, video recommendations, and channel subscriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
